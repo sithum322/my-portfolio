@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* HERO */
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+    color: #00bcd4;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #aaa;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.primary {
+    background: #00bcd4;
+    color: black;
+}
+
+.outline {
+    border: 1px solid #00bcd4;
+    color: #00bcd4;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 380px;
+    filter: drop-shadow(0 0 30px rgba(0,188,212,0.3));
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-image img {
+    width: 220px;
+    height: 220px;
+}
+
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 20px #00bcd4; }
+    50% { box-shadow: 0 0 40px #00bcd4; }
+    100% { box-shadow: 0 0 20px #00bcd4; }
+}
+
+.hero-image img {
+    animation: glow 3s infinite;
+}
+
