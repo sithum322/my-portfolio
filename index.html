@@ -3,47 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sithum Lakshan Wickramasinghe| Portfolio</title>
+    <title>Sithum Lakshan Wickramasinghe | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">siTHum.7</div>
+
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<!-- HERO -->
+<section class="hero" id="home">
+
     <div class="hero-text">
-        <h1>Hi, I’m <span>Sithum wickramasinghe</span></h1>
-        <h2>Computer System and Network Engineer</h2>
+        <h1>Hi, I’m <span>Sithum Wickramasinghe</span></h1>
+        <h2>Computer Systems & Network Engineer</h2>
+
         <p>
-            I’m an IT undergraduate with a strong interest in DevOps, Cloud Computing, and Embedded Systems.
-            I enjoy building practical projects, learning new technologies, and turning ideas into working solutions.
-
-            I have hands-on experience with Linux, Git, GitHub, Jenkins, AWS, and basic CI/CD pipelines.
-            Alongside DevOps, I also work with ESP32, sensors, and IoT projects, combining hardware and software to solve real-world problems.
-
+            IT undergraduate passionate about DevOps, Cloud Computing, Networking and IoT systems.
+            Experienced in Linux, Git, GitHub, Jenkins, AWS and CI/CD pipelines.
         </p>
 
         <div class="buttons">
-            <a href="#" class="btn primary">Hire Me</a>
-            <a href="#" class="btn outline">Let’s Talk</a>
+            <a href="cv.pdf" class="btn primary" download>Download CV</a>
+            <a href="https://github.com/sithum322" target="_blank" class="btn outline">GitHub</a>
+            <a href="#" class="btn outline">LinkedIn</a>
         </div>
     </div>
 
     <div class="hero-image">
         <img src="hero.jpg" alt="Profile Image">
     </div>
+
 </section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am an IT undergraduate focused on DevOps Engineering, Cloud Computing,
+        Networking and Embedded Systems. I enjoy building automation systems,
+        CI/CD pipelines and IoT-based smart solutions.
+    </p>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <span>Linux</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Docker</span>
+        <span>Jenkins</span>
+        <span>AWS</span>
+        <span>CI/CD</span>
+        <span>Networking</span>
+        <span>ESP32</span>
+        <span>IoT</span>
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+
+    <h2>Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>DevOps Automation</h3>
+            <p>CI/CD pipelines using Jenkins, GitHub Actions and Docker.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Deployment</h3>
+            <p>AWS EC2 setup, hosting, monitoring and automation.</p>
+        </div>
+
+        <div class="card">
+            <h3>IoT Systems</h3>
+            <p>ESP32 based smart devices and sensor integration.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+
+    <h2>Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>GitHub Pages + Jenkins CI/CD automated deployment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Cradle System</h3>
+            <p>IoT-based infant monitoring and automation system.</p>
+        </div>
+
+        <div class="card">
+            <h3>Paralyzed Hand System</h3>
+            <p>Embedded rehabilitation assistance system.</p>
+        </div>
+
+        <div class="card">
+            <h3>AWS Hosting Project</h3>
+            <p>Deployed website using EC2 + Nginx + Jenkins pipeline.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+    <h2>Contact Me</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Email</h3>
+            <p>sithum@example.com</p>
+        </div>
+
+        <div class="card">
+            <h3>GitHub</h3>
+            <p>github.com/sithum322</p>
+        </div>
+
+        <div class="card">
+            <h3>Location</h3>
+            <p>Sri Lanka</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Sithum Lakshan Wickramasinghe. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
